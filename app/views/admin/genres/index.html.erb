@@ -1,6 +1,6 @@
 <h1>ジャンル一覧・追加</h1>
 
-<%= form_with model: @genre.id do |f| %>
+<%= form_with model: [:admin,@genre] do |f| %>
 <table>
   <tbody>
     <tr>
@@ -24,7 +24,7 @@
   <tbody>
     <tr>
       <td><%= genre.name%></td>
-      <td><%= link_to "編集する", edit_admin_genre_path %></td>
+      <td><%= link_to "編集する", edit_admin_genre_path(genre.id) %></td>
     </tr>
   </tbody>
   <%end%>
