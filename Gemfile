@@ -57,3 +57,5 @@ end
 gem 'devise'
 
 gem 'byebug'
+
+gem 'pry-rails'
