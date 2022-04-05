@@ -1,5 +1,15 @@
-<%= link_to "商品一覧", admin_items_path %>
-<%= link_to "会員一覧"%>
-<%#= link_to "注文履歴一覧"%>
-<%= link_to "ジャンル一覧", admin_genres_path %>
-<%= link_to "ログアウト", destroy_admin_session_path, method: :delete %>
+<nav class="navbar navbar-expand-lg  navbar-light">
+  <div class="container">
+      <%= link_to "Logo", admin_items_path, class: "btn btn-outline-secondary"%>
+      <div class="collapse navbar-collapse">
+        <%= link_to "商品一覧", admin_items_path, class: "btn btn-outline-secondary" %>
+        <%= link_to "会員一覧", class: "btn btn-outline-secondary" %>
+        <%#= link_to "注文履歴一覧", class: "btn btn-outline-secondary" %>
+        <%= link_to "ジャンル一覧", admin_genres_path, class: "btn btn-outline-secondary" %>
+        <%= link_to "ログアウト", destroy_admin_session_path, method: :delete, class: "btn btn-outline-secondary" %>
+      </div>
+
+
+  </div>
+</nav>
+
